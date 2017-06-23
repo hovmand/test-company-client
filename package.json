@@ -5,7 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --content-base build"
+    "dev": "webpack-dev-server --content-base build",
+    "build": "webpack -p",
+    "start": "http-server build -p 80"
   },
   "author": "Jonas Hovmand",
   "license": "MIT",
@@ -25,5 +27,8 @@
     "redux-thunk": "^2.2.0",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0"
   }
 }
