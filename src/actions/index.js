@@ -1,5 +1,4 @@
 import fetch from 'isomorphic-fetch'
-import { push } from 'react-router-redux'
 
 const url = 'http://localhost:4567/'
 
