@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-fetch'
 
-const url = 'http://localhost:4567/'
+//const url = 'http://localhost:4567/'
+const url = 'https://secure-brushlands-54660.herokuapp.com/'
 
 export const REQUEST_COMPANIES = 'REQUEST_COMPANIES';
 function requestCompanies() {
