@@ -5,6 +5,16 @@ var PUBLIC_PATH = '/assets/';
 var APP_DIR = path.resolve(__dirname, 'src');
 var BUILD_DIR = path.resolve(__dirname, 'build' + PUBLIC_PATH);
 
+const environment = process.env.NODE_ENV || 'development'
+
+const plugins = [
+	new webpack.DefinePlugin({
+		'process.env': {
+			NODE_ENV: JSON.stringify(environment),
+		}
+	}),
+]
+
 module.exports = {
 	context: APP_DIR,
 	entry: {
@@ -15,6 +25,7 @@ module.exports = {
 		publicPath: PUBLIC_PATH,
 		filename: 'bundle.js',
 	},
+	plugins,
 	module: {
 		rules: [
 			{

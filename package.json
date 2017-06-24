@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --content-base build",
-    "postinstall": "webpack -p",
+    "postinstall": "NODE_ENV=production webpack -p",
     "start": "http-server build -p ${PORT}"
   },
   "author": "Jonas Hovmand",
