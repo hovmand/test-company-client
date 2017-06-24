@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch'
 
 const url = ((process.env.NODE_ENV && process.env.NODE_ENV === 'development')
 	? 'http://localhost:4567/'
-	: 'https://secure-brushlands-54661.herokuapp.com/')
+	: 'https://secure-brushlands-54660.herokuapp.com/')
 
 export const REQUEST_COMPANIES = 'REQUEST_COMPANIES';
 function requestCompanies() {
